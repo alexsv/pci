@@ -68,7 +68,11 @@ def load_data(input_filename):
 
 def main(input_filename):
 	critics = load_data(input_filename)
+	print 'Distance-based similarity:'
 	print_similarity(critics, sim_distance)
+	print
+	print 'Pearson coefficient'
+	print_similarity(critics, sim_pearson)
 		
 if __name__ == '__main__':
 	main('input.json')
